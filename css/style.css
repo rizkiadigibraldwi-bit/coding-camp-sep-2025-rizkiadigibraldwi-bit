@@ -1,0 +1,39 @@
+body {
+  height: 100vh;
+  justify-items: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  margin: 40px;
+  background: #1f2937;
+}
+
+form {
+  margin-bottom: 20px;
+}
+input,
+button {
+  padding: 8px;
+  margin-right: 5px;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+.date {
+  font-size: 0.9em;
+  color: gray;
+}
+button.delete {
+  background: #f784c5;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+.add-btn {
+  background-color: #000072;
+}
+.filter-btn {
+  background-color: #1b602f;
+}

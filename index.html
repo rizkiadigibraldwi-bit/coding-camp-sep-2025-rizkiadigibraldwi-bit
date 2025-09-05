@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List with Date</title>
+    <!-- css external -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="text-white">
+    <header>
+      <h1 class="text-3xl font-bold">To-Do List with Date</h1>
+    </header>
+
+    <!-- main -->
+    <main>
+      <!-- Form Add Task -->
+      <section id="todo-input-section" class="py-[16px]">
+        <form id="todo-form">
+          <input type="text" id="task" placeholder="Enter task" required />
+          <input type="date" id="date" required />
+          <button type="submit" class="add-btn text-white py-2 rounded">Add</button>
+        </form>
+      </section>
+
+      <!-- Filter by Date -->
+      <div>
+        <label for="filter-date">Filter by Date:</label>
+        <input type="date" id="filter-date" />
+        <button onclick="filterTasks()" class="rounded bg-gray-100 filter-btn text-white">Filter</button>
+        <button onclick="showAll()" class="rounded bg-gray-100">Show All</button>
+      </div>
+
+      <!-- To-Do List -->
+      <section class="my-[16px]">
+        <h2 class="text-xl font-bold mb-4">To-Do List</h2>
+        <ul id="todo-list" class="text-center">
+          <p>No tasks added yet.</p>
+        </ul>
+      </section>
+    </main>
+    <!-- footer -->
+
+    <!-- js -->
+    <script src="js/main.js"></script>
+    <div class="justify-content py-6">
+      <img src="img/bakushingif.gif" alt="gif" />
+    </div>
+    <footer class="text-center py-4">
+      <p>&copy; 2025 To-Do List App</p>
+    </footer>
+  </body>
+</html>
